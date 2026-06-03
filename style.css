@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f5f0eb;
+  color: #1a1a1a;
+  padding: 24px 16px 60px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b5451b;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.hero {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.hero img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 60%;
+  display: block;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.day-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.day-card.arrival,
+.day-card.departure {
+  background: #fdf3ee;
+  border: 1px solid #f0cfc0;
+}
+
+.day-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.day-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b5451b;
+  background: #fdeee8;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.day-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  background: #f9f9f9;
+  border-radius: 9px;
+  overflow: hidden;
+  border-left: 3px solid #d4a96a;
+  display: flex;
+  flex-direction: column;
+}
+
+.option img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.option-body {
+  padding: 12px 14px;
+}
+
+.option-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #b5451b;
+  margin-bottom: 4px;
+}
+
+.option h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.option p {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.option a {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #b5451b;
+  text-decoration: none;
+}
+
+.option a:hover {
+  text-decoration: underline;
+}
+
+.option-diner {
+  margin-top: 10px;
+  border-left-color: #8a6bbf;
+}
+
+.option-diner .option-label {
+  color: #6a4fa0;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+@media (min-width: 540px) {
+  .options {
+    flex-direction: row;
+  }
+  .option {
+    flex: 1;
+  }
+}
